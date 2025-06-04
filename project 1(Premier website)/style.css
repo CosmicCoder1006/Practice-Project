@@ -69,7 +69,7 @@ html, body{
 #center{
     height: 90%;
     width: 100%;
-    padding: 3vw;
+    padding: 3vw biege;
     position: relative;
 }
 
@@ -89,8 +89,8 @@ html, body{
     height: 58%;
     width: 100%;
     padding: 3vw;
-    color: white;
     bottom: 0;
+    color: white;
     position: absolute;
 }
 
@@ -110,7 +110,6 @@ html, body{
 #over1 h2{
     font-size: 1vw;
     padding: 2vw 2.2vw;
-    
     border-radius: 50%;
     border: 1px solid white;
     border-bottom: 5px solid white;
@@ -139,11 +138,13 @@ html, body{
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
+    background-color: beige;
 }
 
 #container{
     height: 100%;
     width: 100%;
+    background-color: beige;
     display:inline-block;
     padding: 2vw;
     padding-left: 0%;
@@ -173,4 +174,48 @@ html, body{
     }
 }
 
+
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    background-color: beige;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    padding: 0.4vw 0.6vw;
+    border-radius: 50%;
+    border: 2px solid beige;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#alphabet h6:hover{
+    border: 2px solid black;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
 
