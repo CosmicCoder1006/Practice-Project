@@ -136,21 +136,41 @@ html, body{
 #scroll{
     height: 40vh;
     width: 100%;
-    background-color: red;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #container{
     height: 100%;
     width: 100%;
-    background-color: blue;
     display:inline-block;
+    padding: 2vw;
+    padding-left: 0%;
+    padding-right: 0%;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
 #scroll img{
-    height: 80%;
+    height: 95%;
     border-radius: 50%;
-    width: 17%;
+    width: 15%;
+    margin: 2vw; 
     object-fit: cover;
-    object-position: top;
+    object-position: 30% 30%;
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-100%);
+    }
 }
 
 
