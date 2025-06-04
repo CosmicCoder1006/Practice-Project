@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    position: relative;
+    padding-top: 0.1px;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#nav{
+    height: 12vh;
+    width: 100%;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#nav h1{
+    
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: monument;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+#nav h2:nth-last-child(2){
+    width: 29%;
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 58%;
+    width: 100%;
+    padding: 3vw;
+    color: white;
+    bottom: 0;
+    position: absolute;
+}
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3.6vw;
+    font-weight: 600;
+}
+
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 5px solid white;
+}
+
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img{
+    height: 3vw;
+}
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    background-color: red;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    display:inline-block;
+}
+#scroll img{
+    height: 80%;
+    border-radius: 50%;
+    width: 17%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
