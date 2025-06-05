@@ -20,7 +20,7 @@ html, body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
+} 
 
 #nav{
     height: 12vh;
@@ -230,12 +230,14 @@ html, body{
     background-image: url(https://images.unsplash.com/photo-1513379733131-47fc74b45fc7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
+    margin-left: 7vw;
     
 }
 
 #page2-part2{
     height: 100%;
     width: 46%;
+    margin-left: 10vw;
 }
 
 #page2-part2 img{
@@ -244,5 +246,77 @@ html, body{
     object-fit: cover;
 }
 
+#page2-part2-part1 h1{
+    font-size: 1.5vw;
+}
 
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: beige;
+    padding: 5vw 4vw;
+}
 
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    font-size: 3vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 7vh  ;
+}
+
+.elem{
+    height: 16vh;
+    width: 100%; 
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+}
+
+.elem img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left: 10%;
+    opacity: 0;
+    transition: all ease 0.8s;
+    object-fit: cover;
+    object-position: top;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+}
+
+.elem .elem-part2{
+    width: 45%;
+}
+
+.elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+
+.elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+ 
+.elem:hover img{
+    opacity: 1;
+    left : 24%;
+}
