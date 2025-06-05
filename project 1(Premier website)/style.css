@@ -10,6 +10,9 @@ html, body{
     height: 100%;
 }
 
+body{
+    background-color: beige;
+}
 #main{
     height: 100%;
     width: 100%;
@@ -276,6 +279,7 @@ html, body{
     justify-content: space-between;
     padding: 0 2vw;
     position: relative;
+    transition: all ease 0.8s;
 }
 
 .elem img{
@@ -315,7 +319,11 @@ html, body{
 .elem:nth-last-child(1){
     border-bottom: 2px solid black;
 }
- 
+
+.elem:hover{
+    background-color: rgb(212, 212, 212);
+}
+
 .elem:hover img{
     opacity: 1;
     left : 24%;
