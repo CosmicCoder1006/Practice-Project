@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Plain Light";
+  src: url(./fonts/plain-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: "Plain Light";
+  src: url(./fonts/plain-light-webfont.ttf);
+}
+
+@font-face {
+  font-family: "silk serif";
+  src: url(./fonts/silkserif-regularitalic-webfont.ttf);
+}
+
+@font-face {
+  font-family: "silk serif";
+  src: url(./fonts/silkserif-lightitalic-webfont.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -55,11 +75,47 @@ html, body{
 }
 
 .line h2{
-    font-size: 6.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 900;
+    animation-name:  anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes anime{
+    0%{
+        font-family: "paint light";
+        -webkit-text-stroke: 1px white;
+        color: white;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    48%{
+        font-family: "paint light";
+        -webkit-text-stroke: 1px white;
+        color: white;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+    50%{
+        font-family: 'silk serif';
+        -webkit-text-stroke: 0.1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+    }
+
+    100%{
+        font-family: 'silk serif';
+        -webkit-text-stroke: 0.1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+    }
+}
 #main{
     position: relative;
     background-color: #0003;

@@ -1,4 +1,5 @@
- var t1 = gsap.timeline();
+function loadingAnimation() {
+var t1 = gsap.timeline();
 
 t1.from(".line h1", {
     y:150,
@@ -24,6 +25,10 @@ t1.from("#line1-part1 , .line h2", {
     }
 })
 
+t1.to('.line h2',{
+    animationName: "anime",
+    opacity: 1
+} )
 t1.to("#loader", {
     opacity: 0,
     duration: 0.2,
@@ -41,4 +46,6 @@ t1.from("#page1", {
 t1.to("#loader", {
     display: "none",
 })
+}
+loadingAnimation()
 
